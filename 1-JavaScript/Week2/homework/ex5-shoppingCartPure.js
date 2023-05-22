@@ -16,7 +16,16 @@ it pure. Do the following:
 5. Confirm that you function passes the provided unit tests.
 ------------------------------------------------------------------------------*/
 // ! Function under test
-function addToShoppingCart(/* TODO parameter(s) go here */) {
+function addToShoppingCart(shoppingCart, groceryItem) {
+  // creating new shopping cart with ES6 spread syntax
+  const newShoppingCart = [...shoppingCart,groceryItem];
+  // new shopping cart maximum
+  if(newShoppingCart.length > 3){
+    // The slice() method returns selected elements in an array, as a new array
+    newShoppingCart.slice();
+  }
+  // 
+  return newShoppingCart;
   // TODO complete this function
 }
 
