@@ -189,4 +189,12 @@ for (let i = 0; i < 5; i++) {
 // Log the drinks to the console
 console.log(`Hey guys, I brought a ${drinkTray.join(', ')}!`);
 
+function rotateStringRight(string) {
+  setInterval(function() {
+      string = string[string.length - 1] + string.substring(0, string.length - 1);
+      console.log(string);
+  }, 1000);
+}
 
+// Usage example:
+rotateStringRight('Robert');
