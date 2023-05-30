@@ -34,7 +34,7 @@ function addToShoppingCart(groceryItem) {
     
   return `You bought ${shoppingCart.join(', ')}`;
   }
-  // TODO complete this function
+  addToShoppingCart()
  
 
 

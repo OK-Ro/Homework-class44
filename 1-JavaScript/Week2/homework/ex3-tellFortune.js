@@ -34,15 +34,15 @@ body, this code is now written once only in a separated function.
 // This function should take an array as its parameter and return
 // a randomly selected element as its return value.
 function selectRandomly(array) {
-  // TODO complete this function
+  
   // random value  to be returned
   const randomIndex = Math.floor(Math.random() * array.length);
   const randomElement = array[randomIndex];
-  return randomElement;
+  return array[randomIndex];
 }
 
 function tellFortune(numKids, partnerNames, locations, jobTitles) {
-  // TODO complete this function
+
   const randomNumKids = selectRandomly(numKids);
   const randomPartnerName = selectRandomly(partnerNames);
   const randomLocation = selectRandomly(locations);
@@ -51,12 +51,7 @@ function tellFortune(numKids, partnerNames, locations, jobTitles) {
 }
 
 function main() {
-  const numKids = [
-    // TODO add elements here
-    "1", "2", "3", "4", "5"
-
-
-  ];
+  const numKids = [1, 2, 3, 4,5];
 
   const partnerNames = [
     // TODO add elements here
