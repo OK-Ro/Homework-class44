@@ -29,7 +29,7 @@ const fruitBasket = [
 function sanitizeFruitBasket(fruitBasket, sanitized) {
   
   const filteredFruit = fruitBasket.filter(filtered => filtered !== sanitized);
-  
+  return filteredFruit;
 }
 console.log(sanitizeFruitBasket(fruitBasket, 'lemon'));
 
