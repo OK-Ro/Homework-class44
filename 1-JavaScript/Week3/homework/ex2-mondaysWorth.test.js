@@ -37,6 +37,7 @@ function computeEarnings(tasks, hourlyRate) {
   .map(task =>(task.duration * hourlyRate) / 60)
   // reduce function to calculate the sum of all elements
   .reduce((total, amount) => total + amount, 0);
+  // used to fixed method
   return `€${formattedEuroAmount.toFixed(2)}`;
   
 

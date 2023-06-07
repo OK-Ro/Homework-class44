@@ -29,6 +29,7 @@ const fruitBasket = [
 function sanitizeFruitBasket(fruitBasket, sanitized) {
   
   const filteredFruit = fruitBasket.filter(filtered => filtered !== sanitized);
+//  added this return that i had forgoten to add before
   return filteredFruit;
 }
 console.log(sanitizeFruitBasket(fruitBasket, 'lemon'));
