@@ -27,4 +27,3 @@ addCurrentTime();
 setInterval(updateCurrentTime, 1000);
 // when loading in the browser.
 window.addEventListener('DOMContentLoaded', addCurrentTime);
-

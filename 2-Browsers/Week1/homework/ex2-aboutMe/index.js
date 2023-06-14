@@ -25,6 +25,3 @@ const listItems = document.querySelectorAll('li');
 listItems.forEach(li => {
   li.classList.add('list-item');
 });
-
-  
-
