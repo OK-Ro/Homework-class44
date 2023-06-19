@@ -10,15 +10,18 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
 ------------------------------------------------------------------------------*/
 
 //  replace each of the spans (`nickname`, fav-food`, hometown
-const nickname = document.querySelector('#nickname');
-nickname.textContent = 'Robert';
+const changeTextContent = (id, text) => {
+  const elementToChange = document.getElementById(id);
+  elementToChange.textContent = text;
+};
+// Update nickname
+changeTextContent('nickname', 'Robert');
 
-const favFood = document.querySelector('#fav-food');
-favFood.textContent = 'Pizza';
+// Update fav-food
+changeTextContent('fav-food', 'Pizza');
 
-const hometown = document.querySelector('#hometown');
-hometown.textContent = 'Utrecht';
-
+// Update hometown
+changeTextContent('hometown', 'Utrecht');
 
 // 
 const listItems = document.querySelectorAll('li');
