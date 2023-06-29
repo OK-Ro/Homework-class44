@@ -21,16 +21,16 @@ https://hackyourfuture.github.io/example-pages/Browsers/Week1/1-booklist/
 
 function createBookList(books) {
   
-    // CREATE THE ul
+    
     const ulElement = document.createElement('ul');
-    // 1. Iterate through the array of books
+   
     books.forEach(book =>{
       const pElement = document.createElement('p');
       pElement.textContent = `${book.title} by ${book.author}`;
-      // Use a `<ul>`  and `<li>` to display the books
+     
       const liElement = document.createElement('li');
       liElement.appendChild(pElement)
-      //  Add an `<img>` to each book that links to a URL of the book cover
+      
       const imgElement = document.createElement('img');
       imgElement.src = book.coverUrl;
       liElement.appendChild(imgElement);

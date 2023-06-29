@@ -29,7 +29,7 @@ imgElement.style.left = '0px';
 const fullScreen = window.innerWidth;
 const middlePosition = fullScreen / 2;// divide it by half
 
-let Dancing = false;
+let dancing = false;
 
 
 function catWalk() {
@@ -40,17 +40,17 @@ function catWalk() {
   imgElement.style.left = `${newPosition}px`;
   
   // this returns the cat to the begining
-  if (newPosition === fullScreen) {
+  if (newPosition >= fullScreen) {
     imgElement.style.left = '0px';
   }
-  if (newPosition === middlePosition && !Dancing) {
+  if (newPosition >= middlePosition && !dancing) {
     // If the cat reaches the middle of the screen and is not already dancing
     imgElement.src = 'https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif';
-    Dancing = true;
+    dancing = true;
     // After 5 seconds, replace the image with the original one and allow the cat to continue walking
     setTimeout(() => {
     imgElement.src = 'http://www.anniemation.com/clip_art/images/cat-walk.gif'; 
-    Dancing = false;
+    dancing = false;
     }, 5000);
   } 
     
