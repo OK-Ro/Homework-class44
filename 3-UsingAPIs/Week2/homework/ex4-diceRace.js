@@ -10,7 +10,7 @@ Full description at: https://github.com/HackYourFuture/Homework/blob/main/3-Usin
    resolves. Do you know why? Add your answer as a comment to the bottom of the 
    file.
 ------------------------------------------------------------------------------*/
-// ! Do not remove this line
+
 const rollDie = require('../../helpers/pokerDiceRoller');
 
 function rollDice() {
@@ -40,7 +40,7 @@ async function main() {
   }
 }
 
-// ! Do not change or remove the code below
+
 if (process.env.NODE_ENV !== 'test') {
   main();
 }

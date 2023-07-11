@@ -9,7 +9,7 @@ Full description at: https://github.com/HackYourFuture/Homework/blob/main/3-Usin
    without using recursion. Hint: a `while` loop may come handy.
 3. Refactor the function `main()` to use async/await and try/catch.
 ------------------------------------------------------------------------------*/
-// ! Do not change or remove the next two lines
+
 const rollDie = require('../../helpers/pokerDiceRoller');
 
 function rollDieUntil(wantedValue) {
@@ -28,7 +28,7 @@ function rollDieUntil(wantedValue) {
 }
 }
 
-// TODO refactor this function to use try/catch
+
 async function main() {
   try {
     const result = await rollDieUntil('ACE')
